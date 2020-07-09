@@ -17,4 +17,9 @@ fi
 #  compinit
 
 . $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+#. $HOME/.asdf/completions/asdf.bash
+. $HOME/.asdf/plugins/java/asdf-java-wrapper.zsh
+. ~/.asdf/plugins/java/asdf-java-wrapper.zsh
+asdf reshim java
+export GOPATH=~/code/go
+export PATH=${PATH}:${GOPATH}/bin
